@@ -1,0 +1,42 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+/* The album image is resized to 400x400px */
+img{
+    width: 400px;
+    height: 400px;
+}
+
+/* The main container uses flexbox to arrange the cards in a row with spacing */
+.container{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Each card has fixed size, light background, and rounded corners */
+.card{
+ width: 400px;
+ height: 500px;
+ background-color:rgb(249, 249, 234);
+ border-radius: 7px;
+ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* The card title has internal padding */
+h1{
+    padding: 10px;
+}
+
+/* On hover, the card slightly enlarges */
+.card:hover{
+    transform: scale(1.05);
+}
