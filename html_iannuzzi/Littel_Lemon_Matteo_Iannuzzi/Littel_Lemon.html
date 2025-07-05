@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- Declares HTML5 document -->
+<html lang="it"> <!-- Sets the page language to Italian -->
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding (supports accented letters, etc.) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility with old Internet Explorer browsers -->
+  <meta name="description" content="Littel Lemon"> <!-- Site description for search engines -->
+  <meta name="author" content="Matteo Iannuzzi"> <!-- Site author -->
+  <link rel="stylesheet" href="Reset.css" /> <!-- Link to browser style reset file -->
+  <link rel="stylesheet" href="Littel_Lemon.css"/> <!-- Link to custom stylesheet -->
+  <title>Littel Lemon</title> <!-- Title shown in browser tab -->
+</head>
+<body>
+  <!-- Main navigation bar -->
+  <nav>
+    <div class="navbar">
+      <!-- Clickable logo with toggleMenu() function -->
+      <div class="logo" onclick="toggleMenu()">
+        <img src="Little-Lemon-logos/Asset 7@4x.png" alt="Logo Littel Lemon">
+      </div>
+      <!-- Navigation list -->
+      <div class="nav-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Veg</a></li>
+          <li><a href="#">Pizza</a></li>
+          <li><a href="#">Ristorante</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main page body -->
+  <main>
+    <!-- Centered logo below navbar -->
+    <header>
+      <div class="logo-centrale">
+        <img src="Little-Lemon-logos/Asset 14@4x.png" alt="">
+      </div>
+    </header>
+
+    <!-- Promotions section -->
+    <div class="promo-container">
+      <!-- Promo 1: Desserts -->
+      <div class="Promo">
+          <img src="Little-Lemon-logos/Tiramisu_450x300.avif" alt="Promo Dolci">
+          <div>
+              <h1>-30% on all Desserts</h1>
+              <p>All our desserts, from the smallest slice to the largest portion, are 30% off this weekend</p>
+          </div>
+      </div>
+      <!-- Promo 2: Couples -->
+      <div class="Promo">
+          <img src="Little-Lemon-logos/Torta-per-due_780x520_wm.avif" alt="Promo innamorati">
+          <div>
+              <h1>-25% for all couples</h1>
+              <p>All our sharing dishes have an extra discount</p>
+          </div>
+      </div>
+      <!-- Promo 3: Vegans -->
+      <div class="Promo">
+          <img src="Little-Lemon-logos/Felafel-Falafel_450x300.avif" alt="Promo Falafel">
+          <div>
+              <h1>-25% on our Falafel</h1>
+              <p>It's never been so convenient to be vegan</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- Main dishes section -->
+    <section>
+      <!-- Each article represents a dish -->
+      <article>
+        <img src="Little-Lemon-logos/Alici-fritte_450x300.avif" alt="Dish 1" />
+        <div>
+            <h1>Fried Anchovies</h1>
+        </div>
+      </article>
+
+      <article>
+        <img src="Little-Lemon-logos/Couscous-alle-verdure_450x300.avif" alt="Dish 2" />
+        <div>
+            <h1>Vegetable Couscous</h1>
+        </div>
+      </article>
+
+      <article>
+        <img src="Little-Lemon-logos/Girelle-di-zucchine-ripiene_450x300.avif" alt="Dish 3" />
+        <div>
+            <h1>Zucchini Rolls</h1>
+        </div>
+      </article>
+
+      <article>
+        <img src="Little-Lemon-logos/Spaghetti-alla-Carbonara_450x300.webp" alt="Dish 4" />
+        <div>
+            <h1>Spaghetti Carbonara</h1>
+        </div>
+      </article>
+
+      <article>
+        <img src="Little-Lemon-logos/Spaghetti-all-Amatriciana_450x300.avif" alt="Dish 5" />
+        <div>
+            <h1>Spaghetti Amatriciana</h1>
+        </div>
+      </article>
+
+      <article>
+        <img src="Little-Lemon-logos/Polpette-al-sugo_450x300.avif" alt="Dish 6" />
+        <div>
+            <h1>Meatballs in Sauce</h1>
+        </div>
+      </article>
+    </section>
+
+    <!-- About Us section -->
+    <div class="Chi-siamo">
+        <div>
+            <h1>About Us</h1>
+            <p>
+                Welcome to Little Lemon, a family-run Italian restaurant where the passion for cooking is passed down from generation to generation...
+                <!-- Descriptive text about the restaurant -->
+            </p>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer with rights and logo -->
+  <footer>
+    <p>All rights reserved to Matteo Iannuzzi</p>
+    <img src="Little-Lemon-logos/Asset 18@4x.png" alt="">
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="Littel_Lemon.js"></script>
+</body>
+</html>

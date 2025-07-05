@@ -1,0 +1,289 @@
+/* ---------- GENERAL SETTINGS ---------- */
+body {
+  background-color: blanchedalmond; /* Warm, light background color */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Modern, compatible fonts */
+  margin: 0; /* Removes default browser margins */
+  padding: 0; /* Removes default browser padding */
+}
+
+/* ---------- STICKY NAVBAR ---------- */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  color: #333;
+  border-radius: 10px;
+  margin: 4px 1%;
+  margin-top: 10px;
+  padding: 0.5rem;
+  max-width: 98%;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* ---------- NAVBAR LOGO ---------- */
+.logo {
+  margin-right: 15px;
+  cursor: pointer; /* Shows pointer on hover */
+}
+
+.logo img {
+  max-width: 30px;
+  height: auto;
+  display: block;
+  border-radius: 50%; /* Circular logo */
+}
+
+/* ---------- COLLAPSIBLE MENU (MOBILE) ---------- */
+.nav-list {
+  max-height: 0; /* Closed by default */
+  overflow: hidden; /* Hide content */
+  transition: max-height 0.3s ease;
+}
+
+/* When active, menu opens */
+.nav-list.open {
+  max-height: 500px; /* Enough for all links */
+  margin-top: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 50px;
+  z-index: 1001;
+  padding: 1.5rem 0;
+}
+
+.nav-list ul {
+  list-style: none; /* No bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-list ul {
+  gap: 2rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-list li a:hover {
+  color: #0077b6; /* Blue color on hover */
+}
+
+.nav-list li a {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* ---------- CENTERED LOGO BELOW NAVBAR ---------- */
+.logo-centrale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Space from navbar */
+}
+
+.logo-centrale > img {
+  width: 500px; /* 31.25rem */
+}
+
+/* ---------- PROMOTIONS ---------- */
+.Promo {
+  position: relative;
+  max-width: 400px;
+  height: 180px;
+  margin: 2rem 10px 30px 25px;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth effect */
+}
+
+.Promo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill while keeping proportions */
+  display: block;
+  border-radius: 16px;
+}
+
+.Promo h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.Promo p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.Promo:hover {
+  transform: scale(1.07); /* Slight zoom on hover */
+}
+
+/* ---------- PROMO CONTAINER ---------- */
+.promo-container {
+  display: flex;
+  gap: 8px;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* Wraps if needed */
+}
+
+/* ---------- MAIN DISHES SECTION ---------- */
+section {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+article {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+article:hover {
+  transform: scale(1.05); /* Zoom on hover */
+}
+
+article > div {
+  position: relative;
+  bottom: 60px;
+  margin-left: 10px;
+  color: white;
+}
+
+article h1 {
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+/* ---------- ABOUT US SECTION ---------- */
+.Chi-siamo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.Chi-siamo h1 {
+  font-size: 3.125rem;
+  font-weight: 800;
+}
+
+.Chi-siamo p {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  margin: 10px;
+  color: #575757;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Text left, image right */
+  align-items: center;
+  margin: 30px;
+  background-color: rgb(255, 238, 218); /* Light beige */
+  border-radius: 7px;
+}
+
+footer img {
+  width: 70px;
+}
+
+/* ---------- MEDIA QUERY FOR SMALL SCREENS ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    max-width: 40px;
+    width: 40px;
+    min-width: 40px;
+    padding: 0;
+    align-items: center;
+    background-color: transparent; /* Transparent navbar on mobile */
+    box-shadow: none;
+  }
+
+  .logo img {
+    max-width: 24px;
+  }
+
+  .nav-list.open {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 50px;
+    z-index: 1001;
+    padding: 1.5rem 0;
+  }
+  .nav-list ul {
+    gap: 2rem;
+  }
+  .nav-list li a {
+    font-size: 1.5rem;
+    padding: 1rem ;
+  }
+
+  .logo-centrale {
+    display: none;
+  }
+}
+
+/* ---------- MEDIA QUERY FOR LARGE SCREENS ---------- */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 32px;
+    max-width: 95%;
+    height: 60px;
+  }
+
+  .logo {
+    margin-right: 32px;
+  }
+
+  .nav-list {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  .nav-list ul {
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+
